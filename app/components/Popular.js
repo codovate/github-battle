@@ -1,5 +1,10 @@
 var React = require('react');
 
+class SelectLanguage extends React.Component {
+
+}
+
+
 class Popular extends React.Component {
 
     constructor (props) {
@@ -32,7 +37,7 @@ class Popular extends React.Component {
                     return(
                         // this.updateLanguage.bind(null, lang) --> the null is not needed because is already bind at the top to the Component.
                         <li
-                            style={ lang ==== this.state.selectedLanguage ?  { color: '#d0021b' } : null   }
+                            style={ lang === this.state.selectedLanguage ?  { color: '#d0021b' } : null   }
                             key={lang}
                             onClick={ this.updateLanguage.bind(null, lang ) }  > { lang }
 
@@ -41,6 +46,7 @@ class Popular extends React.Component {
                 }, this )}
             </ul>
         )
+
     }
 
 }
